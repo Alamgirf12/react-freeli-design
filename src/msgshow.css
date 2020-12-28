@@ -1,0 +1,61 @@
+.chatlist {
+	z-index: 0 !important;
+	
+
+
+}
+
+.chatlist li{
+	height:auto;
+	margin:5px 10px;
+	padding:5px 10px;
+	list-style: none;
+	color:var(--PrimaryC);
+	
+
+
+}
+.chatlist li img{
+	margin-bottom: -20px !important;
+}
+
+.chatlist li p{
+
+	margin-left:55px !important;
+	color:black;
+	 word-wrap: break-word;
+
+
+}
+.chatlist li:hover{
+	background:#f2f2f2;
+	
+	
+
+}
+.call-rep-emoji,.flag{
+	display:inline-flex;
+ padding:5px 12px;
+	align-content: center;
+	align-items: center;
+
+
+}
+.rghtIconHover{
+	background: white;
+	border-radius: 3px;
+	  border: 1px solid var(--PrimaryC);
+
+	height: 40px;
+	width:300px;
+	margin:0px 0px 5px 10px !important;
+	color:red;
+	float:right;
+	right:15px;
+	margin-right: 1px !important;
+    display: none;
+	position: absolute;
+}
+.chatlist li:hover .rghtIconHover{
+	 display: inline-block;
+}
