@@ -1,0 +1,70 @@
+.uploadFile{
+
+  width:550px;
+  height: auto;
+  margin-left:30%;
+  align-items: middle;
+  align-content: center;
+  opacity:2 !important;
+  margin-top: 203px;
+  position: fixed;
+  background: white;
+  border-radius: 5px;
+  z-index: 999999999999 !important;
+  box-shadow: 0 5px 8px 0 gray;
+  padding-bottom: 20px;
+}
+
+.uploadBtn{
+  background: var(--PrimaryC);
+  width:490px;
+  margin-left: 30px;
+  border: 2px solid var(--PrimaryC);
+  border-radius: 5px;
+  height:70px;
+
+
+
+}
+
+.uploadBtn span{
+    color:white;
+  font-size:22px;
+  font-family: sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+  margin:15px 0px 0px 30px;
+ 
+
+}
+.rowComent{
+  margin:20px 0px 0px 30px;
+}
+.rowComent .inputComent{
+  height:100px;
+  width:490px;
+  padding:10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: 0px;
+  border:var(--border);
+  padding-top:-40px;
+}
+.FileSave{
+  background: var(--PrimaryC);
+  padding:8px 10px 8px 20px;
+  width:100px;
+  border-radius: 5px;
+  color:white;
+  margin-top:20px;
+  margin-right:30px;
+  font-size: 18px;
+  float:right;
+    border:1px solid  var(--PrimaryC);
+
+
+
+}
+.FileSave:hover{
+  border:1px solid var(--NewSimpleRed);
+}

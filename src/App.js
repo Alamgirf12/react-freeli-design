@@ -3,16 +3,25 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SignIn from './component/SignIn';
 import Connect from './component/Connect';
 
-import './connect.css'
-import './SignIn.css'
-import './Sidebar.css'
-import './sendform.css'
-import './Navbar.css'
-import './Header.css'
-import './msgshow.css'
-import './App.css'
-import './showDiv.css'
-import './myProfile.css'
+import './Css/Connect.css'
+import './Css/SignIn.css'
+import './Css/Sidebar.css'
+import './Css/Sendform.css'
+import './Css/Navbar.css'
+import './Css/Header.css'
+import './Css/Msgshow.css'
+import './Css/DirectMessage.css'
+import './Css/MuteNotification.css'
+import './Css/ShowDiv.css'
+import './Css/MyProfile.css'
+import './Css/Room.css'
+import './Css/UploadFile.css'
+import './Css/Notification.css'
+import './Css/CheckForm.css'
+import './Css/ChecklistView.css'
+import './Css/ChecklistShow.css'
+import './Css/Forward.css'
+import './Css/AddTag.css'
 
 function App() {
 	

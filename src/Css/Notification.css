@@ -1,0 +1,143 @@
+.lineContent1{
+
+	display: grid;
+	grid-template-columns: 50px auto;
+	width:98%;
+	
+	height:60px;
+    margin-top: 10px;
+	margin-left: 15px;
+	position: relative;
+
+}
+.lineContentImage img{
+	width: 43px;
+	height: 42px;
+	border-radius: 5px;
+	margin:8px 0px 0px 10px;
+
+
+}
+.WorkFreeli{
+	margin:0px 0px 20px 10px;
+	overflow-y: scroll;
+	height: 530px;
+}
+
+
+.lineContentText{
+		margin:5px 0px 0px 20px;
+		color:var(--PrimaryC);
+		font-size:17px;
+		font-family: sans-serif;
+		letter-spacing: 0.7px;
+
+
+}
+
+.lineContentText span{
+	font-size:14px;
+	
+	font-family: var(--F1);
+}
+
+.lineContentText p{
+	margin-top: 0px;
+	color:black;
+	font-family:var(--F1);
+	font-size: 14px;
+
+	}
+
+	.lineContent1:hover{
+		background: #efefef;
+	}
+	.headText{
+		font-size: 50px;
+		font-family: var(--F1);
+		letter-spacing: 1.5px;
+		color:var(--PrimaryC);
+		text-align: center;
+		
+		padding: 18px 40px;
+
+	}
+	.text1{
+    width: 92%;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    color: var(--PrimaryC);
+    
+    margin-left: 30px;
+    padding-right: 10px;
+    word-wrap: break-word;
+	}
+	.text2{
+    
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    color: var(--PrimaryC);
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-right: 10px;
+    word-wrap: break-word;
+	}
+
+	.text1 ul {
+		list-style-type: disc;
+		box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: 18px 46px;
+    box-sizing: border-box;
+
+	}
+	.delete{
+		font-size: 19px;
+		padding:10px 0px 0px 5px;
+		color:red;
+	}
+	.fa-eye{
+		color:var(--PrimaryC);
+		font-size: 18px;
+		padding:10px 0px 0px 5px;
+
+	}
+
+	.hoverIcon{
+		background: white;
+	border-radius: 3px;
+	  border: 1px solid var(--PrimaryC);
+
+	height: 40px;
+	width:60px;
+	margin:10px 0px 5px 10px !important;
+	color:red;
+	float:right;
+	right:15px;
+	margin-right: 1px !important;
+    display: none;
+	position: absolute;
+	}
+	.lineContent1:hover .hoverIcon{
+	 display: inline-block;
+}
+.notiNav span{
+	color:var(--PrimaryC);
+	font-size: 22px;
+	margin-left: 0px;
+	margin-top: -18px !important;
+	display: inline-flex;
+	vertical-align: middle;
+	font-family: var(--F1);
+	letter-spacing: 1px;
+
+
+}
+.notiNav i{
+	font-size: 30px;
+		color:var(--PrimaryC);
+
+}

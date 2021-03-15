@@ -1,0 +1,147 @@
+.MuteNotification{
+    top: 5px;
+    left: 27%;
+    right: 27%;
+    height: 98%;
+     width: 46%;
+    border-radius: 5px;
+    z-index: 7;
+    position: absolute;
+  background: white;
+  border-radius: 5px;
+  z-index: 999999999999 !important;
+  box-shadow: 0 5px 8px 0 gray;
+      box-sizing: border-box;
+ }
+.MuteNotification .row1{
+   display: grid;
+   height:40px;
+   margin:0px 10px 20px;
+   font-family: var(--F1) !important;
+   vertical-align: middle;
+   grid-template-columns: 50% 50%;
+
+   
+}
+.MuteNotification .row2{
+   height:auto;
+   width:100%;
+   display: block
+}
+
+.textInfo{
+  margin-top: 10px;
+  margin-left:30px;
+  color:grey;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.contentMute{    
+    height:75%;
+    overflow-y: scroll;
+    margin:10px 10px 10px 10px;
+    width:auto;
+    position: relative;
+    box-sizing: border-box;
+  
+ 
+
+    }
+ .mm{
+      border: var(--border);
+      width:auto;
+      height: 60px;
+      margin:4px 20px 7px 20px;
+      border-radius: 5px;
+
+    }
+    .mm:hover{
+      border:1px solid var(--PrimaryC);
+      background: #efefef;
+    }
+
+  .circle1{
+      width:20px;
+      height:20px;
+      float:left;
+      border: 1px solid black;
+      border-radius: 100%;
+      display: inline-block;
+      margin-top: 18px;
+      margin-left: 10px;
+    }
+
+    .circle2{
+      width:20px;
+      height:20px;
+      float:left;
+      background: white;
+      border: 7px solid var(--PrimaryC);
+      border-radius: 100%;
+      display: inline-block;
+      margin-top: 18px;
+      margin-left: 10px;
+    }
+
+
+    .TextContent{
+      color:var(--PrimaryC);
+      font-size: 18px;
+      vertical-align: middle;
+      display: inline-block;
+      margin:14px 0px 0px 20px;
+
+      font-family: var(--F1);
+     font-variant: bold !important;
+    }
+    .setMute{
+      display: grid;
+      grid-template-columns: auto auto;
+      height:auto;
+      margin:10px 20px 40px 20px;
+    }
+    .setMute label{
+      text-align: center;
+      margin-left: 30px;
+      color:var(--PrimaryC);
+      font-family: var(--F1);
+      font-size: 14px;
+
+
+    }
+    .setMute input{
+     
+      color:var(--PrimaryC);
+      padding:5px;
+      border:var(--border);
+    
+
+
+    }
+    .customBtn{
+
+      background: white;
+      height: 50px;
+      width:100%;
+      margin-right: 30px;
+      position: absolute;
+      bottom:0px !important;
+    
+      background: white;
+
+
+    }
+.btnRight{
+  float: right;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+

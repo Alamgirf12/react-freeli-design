@@ -1,0 +1,89 @@
+.TagRow2 {
+   height:40px;
+   margin:10px 20px 0px 10px;
+   width:93%;
+   display: grid;
+   
+   grid-template-columns: auto;
+}
+
+.TagRow2 input{
+   
+   margin:0px 10px 0px 20px;
+   width:95%;
+   outline:0px;
+   border:1px solid #E1E4E8;
+   padding-left: 20px;
+    border-radius: 5px;
+
+}
+
+
+.TagHead{
+	font-size: 22px;
+  font-family: "Open Sans" sans-serif;
+  margin-right:10px;
+  padding-bottom: 5px;
+  
+	}
+  .Bottom{
+    border-bottom:4px solid var(--NewblueC);
+    color:var(--NewblueC) !important;
+  }
+
+.TagList{
+  font-size: 18px;
+  margin-left: 20px;
+  
+
+    font-family: "Open Sans";
+ 
+}
+     .large_btn5{
+    
+    border:1px solid #E1E4E8;
+    border-left:3px solid var(--PrimaryC);
+    
+    font-size: 17px;
+    font-family: var(--F1);
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.78);
+
+    width: 95%;
+    height: 50px;
+    padding-top: 5px !important;
+    position: relative;
+    vertical-align: middle !important;
+    text-align: left;
+    border-radius: 5px;
+     margin-top: 5px;
+     cursor: pointer;
+      margin-bottom: 5px;
+      font-family: sans-serif;
+
+    }
+
+  .large_btn5:hover{
+          background: var(--PrimaryC);
+          color:white;
+}
+.IconHover{
+  float:right;
+  width:auto;
+  height:40px;
+  display: none;
+
+}
+  
+  .large_btn5:hover .IconHover{
+    display: inline-block;
+
+  }
+
+    .IconTag{
+      width:18px;
+      height: 18px;
+      margin-top: 2px;
+      
+
+    }

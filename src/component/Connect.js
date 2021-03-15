@@ -1,119 +1,85 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import ChatArea from './ChatArea';
-import CustomDiv from './CustomDiv';
-import Profile from './Profile';
-
-
+import React, { useState} from 'react';
+import Header from './TopBar/Header';
+import Sidebar from './Sidebar/Sidebar';
+import RightArea from './RightSection/Chat/RightArea';
+import ReplayMsg from './RightSection/Chat/ReplayMsg';
+import NotificationPage from './RightSection/NotificationPage';
+import CreateRoom from './RightSection/WorkRoom/CreateRoom';
+import UserFile from './File/index';
+import Profile from './Profile/Profile';
+import ProfileModal from './Modal/ProfileModal';
+import DirectMessage from './Modal/DirectMessage';
+import Forward from './Modal/Forward';
+import AddTag from './Modal/AddTag';
+import RoomOption from './Modal/RoomOption';
+import UpoadFile from './Modal/UploadFile';
+import MuteNotification from './Modal/MuteNotification';
+import CheckView from './Checklist/CheckView';
+import ShowChecklist from './Checklist/module/ShowChecklist';
 
 function Connect() {
 
-	const show = useSelector(state => state.convReducer.modal);
-	const showDiv = useSelector(state => state.convReducer.showDiv);
-	const showProfile = useSelector(state => state.convReducer.showProfile);
-	const showMessage = useSelector(state => state.convReducer.showMessage);
-	const profile = useSelector(state => state.convReducer.profile);
-	const profileData = useSelector(state => state.convReducer);
-	const dispatch = useDispatch();
-    const remove = () => {
-    dispatch({type:'SHOW_MODAL',payload:false})
-}
+      const [toggle,setToggle] = useState('')
+      const [toggleSection,setToggleSection] = useState('')
 
-    const fileShow=()=>{
-      dispatch({type:'SHOW_FILE',payload:true})
+      const [person,setPerson] = useState({
+      id:1,name:"Alamgir Hossain",profilePic:"ss.jpg"});
+ 
+      const PersonInfo=(id,name,profilePic)=>{
+      setPerson({id:id,name:name,profilePic:profilePic})}
 
+const rightSection =(eventName)=>{
+    switch(eventName){
+    case 'profile': setToggleSection('profile'); break;
+    case 'Notification': setToggleSection('Notification'); break;
+    case 'Room': setToggleSection('Room'); setToggle(''); break;
+    case 'ShowChecklist': setToggleSection('ShowChecklist'); setToggle(''); break;
+    case 'Replay': setToggleSection('Replay'); setToggle(''); break;
+    case 'ChecklistView': setToggleSection('ChecklistView'); setToggle(''); break;
+    case 'user_File':setToggleSection('user_File'); break;
+    default: setToggleSection('');
+     }}
 
-}
-
-   const profHide=()=>{
-      dispatch({type:'PROFILE',payload:false})
-
-
-}
-
-
-
-
-	const renderDiv = () => {
+const modal=(eventName)=>{
+    switch(eventName){ 
+    case 'profile': setToggle('profile');  break;
+    case 'MuteNoti': setToggle('MuteNoti');  break;
+    case 'DirectMsg': setToggle('DirectMsg');  break;
+    case 'custom': setToggle('custom');  break;      
+    case 'upload': setToggle('upload'); break;
+    case 'RoomOption': setToggle('RoomOption'); break;
+    case 'Forward': setToggle('Forward'); break;
+    case 'AddTag': setToggle('AddTag'); break;
+    default: setToggle('');
+     }}
+   
 return (<>
-  <div className="modalshow"></div>
-<div className="showDiv">
-    <div className="row1">
-        <div className="part1">Conversation</div>
-        <div className="part2"><span   className="remove"  onClick={remove}></span></div>
-    </div>
-    <div className="row2">
-        <div className="part1" onClick={fileShow}><i class='fas fa-user-friends'></i>&nbsp;Direct Message </div>
-        <div className="part2" onClick={fileShow}><i class='fas fa-user-friends'></i>&nbsp;Create Room</div>
-    </div>
-    <div className="row3">
-        <div className="part1" onClick={fileShow}><i class='fas fa-user-friends'></i>&nbsp;Project Room </div>
-        <div className="part2"><i class='fas fa-user-friends'></i>&nbsp;Support Room <p><h6>Coming soon</h6></p></div>
-    </div>
 
-</div>
-</>
-)
-}
-const renderProfile = () => {
-return (<>
-  <div className="modalshow"></div>
-<div className="showProfile">
-    <div className="row1">
-        <div className="part1">Profile</div>
-        <div className="part2"><span   className="remove"  onClick={profHide}></span></div>
-    </div>
- <div>
- 	<div style={{float:'left'}}><img className='proPic' src={profileData.proPic}  /></div>
- 		<div className="rightC">
- 			<div className="proName">{profileData.profName}</div>
- 			<div className="emailP">www.alamgirf12@gmail.com</div>
- 			<div class="profleIcon">
- 				 
-        <ul type="none">
-            <li className="audio"></li>
-            <li className="video"></li>
-            <li className="more"></li>
-        </ul>
-    
+    {toggle === "RoomOption" ? <div><RoomOption modal={modal} rightSection={rightSection}/></div> : null}
+    {toggle === "profile" ? <div><ProfileModal modal={modal}/></div> : null}
+    {toggle === "upload" ? <div><UpoadFile modal={modal}/></div> : null}
+    {toggle === "DirectMsg" ? <div><DirectMessage modal={modal} /></div> : null}
+    {toggle === "Forward" ? <div><Forward modal={modal} /></div> : null}
+    {toggle === "AddTag" ? <div><AddTag modal={modal} /></div> : null}
+    {toggle === "MuteNoti" ? <div><MuteNotification modal={modal} /></div> : null}
+     
+    <Header  rightSection={rightSection} modal={modal}/>
 
- 			</div>
-
-
- 		</div>
-</div>
-
-  
-
-</div>
-</>
-)
-}
-
-return (
-<div>
-{show ? <div>{renderDiv()}</div> : null}
-{profile ? <div>{renderProfile()}</div> : null}
-  
-
-
-    <Header />
-    <div className="bodycontent">
+ <div className="bodycontent">
         <div className="leftcontent">
-            <Sidebar />
-        </div>
-        <div className="rightcontent">
+        <Sidebar modal={modal} PersonInfo={PersonInfo} rightSection={rightSection}/> </div>
 
-           
-          {showDiv   && <> <CustomDiv/>  </> }
-          {showProfile && <> <Profile/>  </> }
-            {!showDiv &&  !showProfile && <><ChatArea/></>} 
-           
-        </div>
-    </div>
-</div>
-)
-}
+        <div className="rightcontent">   
+          {toggleSection === "Room" &&  <><CreateRoom rightSection={rightSection}/></> }
+          {toggleSection === "user_File" && <>  <UserFile rightSection={rightSection} />  </> }
+          {toggleSection === "Notification"  && <> <NotificationPage rightSection={rightSection}/></> }
+          {toggleSection === "profile" && <> <Profile rightSection={rightSection}/>  </> }
+          {toggleSection === "ShowChecklist" && <> <ShowChecklist rightSection={rightSection}/>  </> }
+          {toggleSection === "Replay" && <> <ReplayMsg rightSection={rightSection}/>  </> }
+          {toggleSection === "ChecklistView" && <> <CheckView rightSection={rightSection} personInfo={person}/>  </> }
+          {toggleSection === ""  && <> <RightArea modal={modal} person={person} rightSection={rightSection}/></>} 
+        </div>   
+  </div>
+</>
+)}
 export default Connect

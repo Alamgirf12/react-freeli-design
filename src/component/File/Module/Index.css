@@ -1,0 +1,417 @@
+.searchRow {
+    height: 40px;
+    margin-left: 50px;
+    width: 98%;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-template-columns: 40px auto 180px
+}
+
+.searchRowLink {
+    height: 40px;
+    margin-left: 50px;
+    width: 90%;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-template-columns: 40px auto
+}
+
+.imageIcon {
+    align-content: center;
+    vertical-align: middle;
+    margin: 5px 5px;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    border-radius: 2px;
+    color: var(--PrimaryC);
+    cursor: pointer;
+}
+
+.imageIcon:hover {
+    background: var(--PrimaryC);
+    color: white;
+}
+
+.activeBackground {
+    background: var(--PrimaryC);
+    color: white;
+}
+
+.infoIcon {
+    align-content: center;
+    vertical-align: middle;
+    margin: 5px 5px;
+    font-size: 22px;
+    padding: 2px;
+    border-radius: 2px;
+    color: var(--PrimaryC);
+    cursor: pointer;
+}
+
+.imageFile { width: 25px; height: 25px; margin: 3px 0px 5px 2px !important;}
+
+.serchBox {
+    width: 100%;
+    outline: 0px !important;
+    height: 40px;
+    border: var(--border);
+    border-radius: 5px;
+    margin-left: -5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.contentRow {
+
+    height: 100px;
+    width: 91%;
+    margin: 30px 10px 10px 10px;
+    border: var(--border);
+    border-radius: 10px;
+    vertical-align: middle !important;
+}
+
+.contentRow:hover { border: 1px solid gray;}
+
+.contentItm {
+    margin-left: 10px;
+    vertical-align: middle !important;
+    display: grid;
+    grid-template-columns: 50px auto;
+    height: 100%;
+}
+.circle {
+    background: white;
+    border-radius: 100%;
+    border: 2px solid var(--PrimaryC);
+    width: 30px;
+    height: 30px;
+    margin: 25px 0px 5px 0px !important;
+    color: red;
+    float: left !important;
+    margin-right: 1px !important;
+    display: none;
+    position: absolute;
+}
+
+.contentlist { z-index: 0 !important; margin-top: 20px;
+ }
+
+.contentlist li {
+    height: 90px;
+    margin: 5px 10px 5px 50px;
+    padding: 5px 10px;
+    list-style: none;
+    color: var(--PrimaryC);
+    width: 90%;
+    position: relative;
+    border: var(--border);}
+
+.contentlist li:hover {background: #f2f2f2;}
+
+.contentlist .rghtIconHover {
+    background: white;
+    border-radius: 3px;
+    border: 1px solid var(--PrimaryC);
+    height: 35px;
+    width: auto;
+    margin: 0px 0px 5px 5px !important;
+    color: red;
+    float: right !important;
+    right: 5px;
+    display: none;
+    position: absolute;}
+
+
+.lineContent {
+    display: grid;
+    grid-template-columns: 130px auto;
+    margin-left: 40px;
+    vertical-align: middle;}
+
+.lineContent img {
+    vertical-align: middle;
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.lineContentlink {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 40px;
+    vertical-align: middle;
+
+}
+
+.lineContentAudio {
+    display: grid;
+    grid-template-columns: 330px auto;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+
+.lineContentAudio audio {
+    margin-top: 23px;
+    height: 35px;
+    font-family: var(--F1);
+    color: black;
+    border: var(--border);
+    border-radius: 10px;
+}
+.lineText {
+    vertical-align: middle;
+    color: black;
+
+    margin-top: 15px;
+}
+
+.lineContent p {
+    vertical-align: middle;
+    color: gray;
+    width: 100%;}
+
+.contentGrid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contentGrid>div {
+    width: 100%;
+    height: auto;
+    word-wrap: wrap;
+    margin: 5px 0px 5px 40px !important;
+    position: relative;}
+
+.lineContentGrid img {
+    width: 90%;
+    height: 100%;
+    margin-left: 16px;
+}
+
+.lineContentGridAudio {
+    height: 48px !important;
+    border: var(--border);
+    width: 99% !important;
+}
+
+.lineContentGridAudio audio {
+    height: 38px;
+    border-radius: 10px;
+    border: var(--border);
+    margin-top: 4px;
+    width: 100% !important;
+}
+
+.lineContentGrid {
+    height: 150px;
+    width: 100%;
+    border: var(--border);
+}
+
+.lineTextGrid {
+    vertical-align: middle;
+    color: var(--PrimaryC);
+
+    margin-top: 5px;
+    word-wrap: break-word;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.circleGrid {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: white;
+    border: 3px solid var(--PrimaryC);
+    border-radius: 100%;
+    display: none;
+    margin-top: 3px;
+    z-index: 444 !important;
+    position: absolute;
+    margin-left: 10px;
+}
+.rghtIconHoverGrid {
+    z-index: 444 !important;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid var(--PrimaryC);
+    height: 35px;
+    width: auto;
+    margin: 5px 5px 5px 20px !important;
+    float: right;
+    right: -1px !important;
+    position: absolute;
+    display: none;
+}
+
+.contentGrid>div:hover .circleGrid, 
+.contentlist li:hover .circle,
+.contentlist li:hover .rghtIconHover,
+.contentGrid>div:hover .rghtIconHoverGrid {
+    display: inline-block;
+}
+.contentlist li:hover .checkmarkList,.contentGrid div:hover .checkmarkList{
+    border:2px solid var(--PrimaryC);
+      background-color: white;
+}
+.contentGrid label{
+    margin-top:0px !important;
+    margin-left: 20px;
+}
+
+
+/* The container */
+.containerList {
+  display: block;
+  vertical-align: middle;
+     float: left !important;
+  margin-top: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+}
+
+/* Hide the browser's default checkbox */
+.containerList input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkList {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  border-radius:50px;
+}
+
+
+
+
+
+/* When the checkbox is checked, add a blue background */
+.containerList input:checked ~ .checkmarkList{
+  background-color: var(--PrimaryC) !important;
+  border:2px solid var(--PrimaryC);
+
+
+}
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkList:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerList input:checked ~ .checkmarkList:after{
+  display: inline-block;
+}
+
+
+
+/* Style the checkmark/indicator */
+.containerList .checkmarkList:after {
+  left: 8px;
+  top: 2px;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.Icon2{
+    background: var(--PrimaryC);
+    width:23px;
+    height: 23px;
+    border-radius: 100%;
+    padding:2px;
+    align-items: center;
+    justify-content: center;
+    border:2px solid var(--PrimaryC);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.Icon2:hover{
+
+    border:2px solid var(--NewSimpleRed);
+
+}
+.Icon3{
+    background: var(--PrimaryC);
+    width:25px;
+    height: 25px;
+    margin-right: 3px;
+    margin-top: -2px;
+    border-radius: 100%;
+    padding:2px;
+    border:2px solid white;
+    background-repeat: no-repeat;
+}
+.toggleText{
+  display: none;
+
+}
+.RightPop:hover .toggleText{
+  display: inline-block;
+  
+}
+.RightPop{
+       position: absolute;
+       float: right;
+       right:1px !important;
+       margin-top: 5px;
+       border-radius: 5px;
+     
+       padding:5px;
+       background: var(--PrimaryC);
+       display: inline-block;
+       z-index:1111;
+       width:auto;
+  
+      
+      }
+
+   
+
+.RightPop li{
+
+    list-style-type: none;
+    margin-top: 3px !important;
+    cursor: pointer;
+    padding:3px;
+    font-size: 18px;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    color:white;
+    cursor: pointer;
+    background-position: 50%;
+    background-size: 16px;
+
+}

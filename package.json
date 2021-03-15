@@ -9,6 +9,7 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "react": "^16.13.1",
+    "react-animated-css": "^1.2.1",
     "react-custom-scroll": "^4.2.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
